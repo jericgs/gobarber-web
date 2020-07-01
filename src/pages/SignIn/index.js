@@ -3,22 +3,21 @@ import { Link } from 'react-router-dom';
 
 import logo from '~/assets/logo.svg';
 
-function SignUp() {
+function SignIn() {
   return (
     <>
       <img src={logo} alt="GoBarber" />
 
       <form>
-        <input placeholder="Nome completo" />
         <input type="email" placeholder="Seu e-mail" />
         <input type="password" placeholder="Senha" />
 
-        <button type="submit">Criar conta</button>
+        <button type="submit">Acessar</button>
 
-        <Link to="/">Já tenho login</Link>
+        <Link to="/register">Criar conta gratuita</Link>
       </form>
     </>
   );
 }
 
-export default SignUp;
+export default SignIn;
